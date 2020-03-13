@@ -1,0 +1,16 @@
+#guerrier, #mage, #voleur{
+    position: fixed;
+    display: inline-block !important;
+}
+
+#mage{
+    left: 150px;
+}
+
+#guerrier{
+    right: 150px;
+}
+
+#voleur{
+    top: 100px;
+}
