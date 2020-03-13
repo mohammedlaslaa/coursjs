@@ -5,10 +5,12 @@
 
 #mage{
     left: 150px;
+    top: 0;
 }
 
 #guerrier{
     right: 150px;
+    top: 0;
 }
 
 #voleur{

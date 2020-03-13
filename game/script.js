@@ -37,7 +37,7 @@ document.addEventListener('keydown', function (e) {
         switch (e.keyCode) {
             case 37:
                 pos = imgguerrier.offsetLeft-10;
-                imgguerrier.style.top = pos + "px";
+                imgguerrier.style.left = pos + "px";
                 break;
             case 38:
                 pos = imgguerrier.offsetTop-10;
@@ -45,7 +45,7 @@ document.addEventListener('keydown', function (e) {
                 break;
             case 39:
                 pos = imgguerrier.offsetLeft+10;
-                imgguerrier.style.top = pos + "px";
+                imgguerrier.style.left = pos + "px";
                 break;
             case 40:
                 pos = imgguerrier.offsetTop+10;
@@ -57,7 +57,7 @@ document.addEventListener('keydown', function (e) {
         switch (e.keyCode) {
             case 37:
                 pos = imgmage.offsetLeft-10;
-                imgmage.style.top = pos + "px";
+                imgmage.style.left = pos + "px";
                 break;
             case 38:
                 pos = imgmage.offsetTop-10;
@@ -65,7 +65,7 @@ document.addEventListener('keydown', function (e) {
                 break;
             case 39:
                 pos = imgmage.offsetLeft+10;
-                imgmage.style.top = pos + "px";
+                imgmage.style.left = pos + "px";
                 break;
             case 40:
                 pos = imgmage.offsetTop+10;
@@ -77,7 +77,7 @@ document.addEventListener('keydown', function (e) {
         switch (e.keyCode) {
             case 37:
                 pos = imgvoleur.offsetLeft-10;
-                imgvoleur.style.top = pos + "px";
+                imgvoleur.style.left = pos + "px";
                 break;
             case 38:
                 pos = imgvoleur.offsetTop-10;
@@ -85,7 +85,7 @@ document.addEventListener('keydown', function (e) {
                 break;
             case 39:
                 pos = imgvoleur.offsetLeft+10;
-                imgvoleur.style.top = pos + "px";
+                imgvoleur.style.left = pos + "px";
                 break;
             case 40:
                 pos = imgvoleur.offsetTop+10;
