@@ -1,18 +1,17 @@
-#guerrier, #mage, #voleur{
+#guerrier,
+#mage,
+#voleur {
     position: fixed;
-    display: inline-block !important;
 }
 
-#mage{
-    left: 150px;
-    top: 0;
+/* #mage {
+    left: 45%;
 }
 
-#guerrier{
-    right: 150px;
-    top: 0;
+#guerrier {
+    left: 20%;
 }
 
-#voleur{
-    top: 100px;
-}
+#voleur {
+    left: 80%;
+} */
