@@ -14,7 +14,7 @@ window.onload = function() {
   //   console.log(window.innerWidth);
 
   const Personnage = function(puissance, name, image) {
-    this.levelLife = 200;
+    this.levelLife = 100;
     this.puissance = puissance;
     this.name = name;
     this.image = image;
@@ -29,6 +29,23 @@ window.onload = function() {
 
     this.coup3 = function(victime) {
       return (victime.levelLife = victime.levelLife - this.puissance * 3);
+    };
+
+    this.move = function(key) {
+      switch (key) {
+        case 37:
+          this.moveLeft();
+          break;
+        case 38:
+          this.moveTop();
+          break;
+        case 39:
+          this.moveRight();
+          break;
+        case 40:
+          this.moveBottom();
+          break;
+      }
     };
 
     this.moveLeft = function() {
@@ -98,23 +115,7 @@ window.onload = function() {
   document.addEventListener("keydown", function(e) {
     if (onhand == 1) {
       imgguerrier.style.zIndex = 1;
-      //   console.log(imgguerrier.offsetTop);
-      //   console.log(imgguerrier.offsetWidth);
-      //   console.log("bartitle " + (bartitle.offsetTop + bartitle.offsetHeight));
-      switch (e.keyCode) {
-        case 37:
-          guerrier.moveLeft();
-          break;
-        case 38:
-          guerrier.moveTop();
-          break;
-        case 39:
-          guerrier.moveRight();
-          break;
-        case 40:
-          guerrier.moveBottom();
-          break;
-      }
+      guerrier.move(e.keyCode);
       getstyleborder(magetitle);
       imgguerrier.style.zIndex = 0;
       onhand = 2;
@@ -122,20 +123,7 @@ window.onload = function() {
     }
     if (onhand == 2) {
       imgmage.style.zIndex = 1;
-      switch (e.keyCode) {
-        case 37:
-          mage.moveLeft();
-          break;
-        case 38:
-          mage.moveTop();
-          break;
-        case 39:
-          mage.moveRight();
-          break;
-        case 40:
-          mage.moveBottom();
-          break;
-      }
+      mage.move(e.keyCode);
       getstyleborder(voleurtitle);
       imgmage.style.zIndex = 0;
       onhand = 3;
@@ -143,20 +131,7 @@ window.onload = function() {
     }
     if (onhand == 3) {
       imgvoleur.style.zIndex = 1;
-      switch (e.keyCode) {
-        case 37:
-          voleur.moveLeft();
-          break;
-        case 38:
-          voleur.moveTop();
-          break;
-        case 39:
-          voleur.moveRight();
-          break;
-        case 40:
-          voleur.moveBottom();
-          break;
-      }
+      voleur.move(e.keyCode);
       getstyleborder(guerriertitle);
       imgvoleur.style.zIndex = 0;
       onhand = 1;
